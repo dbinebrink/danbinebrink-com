@@ -1,0 +1,93 @@
+h1 {
+    color: #fff;
+    padding: 20px;
+}
+
+p {
+    color: #fff;
+}
+
+@media screen and (min-width: 768px){
+    video {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        background-image: url('/assets/img/background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-transition: 1s opacity;
+        transition: 1s opacity;
+    }
+}
+
+.slide .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 98vh;
+    max-height: 950px;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+span.span-special {
+    font-family: "Abril Fatface", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #15c8e4;
+    display: inline-block;
+    transform: scale(1);
+    filter: saturate(100%);
+    scale: 1;
+    padding-left: 0;
+    transition: transform 0.3s, padding-left 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+    header#index-page span.skills {
+        margin-top: 2px;
+    }
+    span.skills {
+        max-width: 790px;
+        display: inline-block;
+        font-size: 16px;
+        padding-bottom: 50px;
+        margin-top: 8px;
+        font-family: 'Roboto', Arial, sans-serif;
+
+    }
+    
+}
+a.button-special {
+    font-size: 24px;
+    background-color: #0099b1;
+    padding: 15px 40px;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Passion One', Helvetica, Arial, sans-serif;
+    transition: color 0.3s, background-color 0.3s, padding 0.3s, border-radius 0.3s, letter-spacing 0.3s;
+    letter-spacing: 0.5px;
+}
+
+@media screen and (min-width: 768px) {
+    header .intro-text .name {
+        display: block;
+        font-family: "Abril Fatface", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 66px;
+        text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    }
+}
+
+.or-scroll-down {
+    opacity: 0;
+    cursor: default;
+    color: #777;
+    position: relative;
+    top: 18vh;
+    width: 200px;
+    height: 20px;
+    margin: 0px auto;
+}
