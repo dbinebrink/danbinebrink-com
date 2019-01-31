@@ -14,6 +14,7 @@ body {
     background-image: url('/assets/img/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -21,10 +22,64 @@ h1 {
 }
 
 h2 {
-    font-family: 'Passion One', Arial, sans-serif
+    font-family: 'Abril Fatface', Helvetica, Arial, sans-serif;
+    color: #15c8e4;
+    margin-bottom: 30px;
+    font-size: 38px !important;
 }
 
 p {
     font-family: 'Roboto', Arial, sans-serif
 }
 
+.container-fluid {
+    padding: 0;
+}
+
+section {
+    background-color: #fff;
+    padding: 50px 10px;
+}
+header {
+    min-height: 350px;
+    background-image: url('assets/img/background-beach.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+header#about {
+    background-image: url('assets/img/background-bridge.jpg');
+}
+header#contact {
+    background-image: url('assets/img/background-city.jpg');
+}
+header#portfolio {
+    background-image: url('assets/img/background-laptop.jpg');
+}
+
+header .intro-text h1.name {
+    display: block;
+    font-family: "Abril Fatface", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 66px;
+    color: #fff;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    margin: 80px auto 20px;
+}
+
+header .intro-text {
+    color: #fff;
+    text-align: center;
+}
+
+
+span.span-special {
+    font-family: 'Abril Fatface', Helvetica, Arial, sans-serif;
+    color: #15c8e4;
+    display: inline-block;
+    transform: scale(1);
+    filter: saturate(100%);
+    scale: 1;
+    padding-left: 0;
+    transition: transform 0.3s, padding-left 0.5s;
+}

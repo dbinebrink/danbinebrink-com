@@ -1,6 +1,33 @@
 nav {
     padding-left: 0;
     margin-left: 0;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+}
+
+.navbar-nav li.nav-item {
+    background-color: transparent;
+    padding: 5px 14px;
+    color: #fff;
+    border-radius: 0px;
+    transition: color 0.5s, background-color 0.3s, padding 0.3s, border-radius 0.3s;
+	letter-spacing: 1px;
+}
+
+.navbar-nav li.nav-item:hover {
+	color: #0099b1;
+	background: rgba(255,255,255,0.2);
+	padding: 5px 14px;
+	border-radius: 3px;
+}
+// hover over main nav buttons on right
+.navbar-nav li.nav-item a.nav-link {
+    font-family: 'Passion One', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    color: white;
+    margin: 5px 20px;
+}
+nav#mainNav {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%) !important;
 }
 
 a.navbar-brand {
@@ -15,29 +42,8 @@ a.navbar-brand {
     margin-left: 0;
 	transition: color 0.3s, background-color 0.3s, border-radius 0.3s;
 }
-
 a.navbar-brand:hover {
 	color: #0099b1;
 	background: #fff;
 	border-radius: 3px;
-}
-
-nav#mainNav {
-	background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
-}
-
-.navbar-nav li.nav-item a.nav-link {
-    font-family: 'Passion One', Helvetica, Arial, sans-serif;
-    font-size: 26px;
-    color: white;
-    margin: 5px 20px;
-}
-
-
-.navbar-nav li.nav-item a.nav-link:hover {
-    background: rgba(255,255,255, 0.3);
-}
-
-nav#mainNav {
-    background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%) !important;
 }

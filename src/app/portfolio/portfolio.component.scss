@@ -1,0 +1,66 @@
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption {
+    background: rgba(21, 200, 228, 0.9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+.modal-body {
+    padding: 40px 80px;
+    background: #fff;
+}
+.modal-body p {
+    margin-top: 2px;
+}
+.portfolio-modal .modal-content img {
+    margin-bottom: 40px;
+    border: solid 1px #eee;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+}
+.img-centered {
+    margin: 0 auto;
+}
+#portfolio .portfolio-item {
+    max-width: 400px;
+    margin: 10px;
+}
+#portfolio .portfolio-item img {
+    box-shadow: 5px 5px 5px #e6e6e6;
+    max-width: 400px;
+    margin: 10px;
+}
+.portfolio-caption {
+    text-align: center;
+    margin-top: 19px;
+    margin-bottom: 0px;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    font-size: 20px;
+    text-align: center;
+    top: 40%;
+    margin-top: 5px;
+    color: white;
+}
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
