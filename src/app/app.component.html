@@ -1,10 +1,7 @@
-
 <app-navbar></app-navbar>
 
-<div class="container-fluid">
-            
-    <router-outlet></router-outlet>
-
+<div class="container-fluid" [@slideInAnimation]="o.isActivated ? o.activatedRoute : ''">
+    <router-outlet #o="outlet"></router-outlet>  <!-- put an animation outlet on the main router outlet -->
 </div>
 
-<app-footer></app-footer>
+<!-- <app-footer></app-footer> -->

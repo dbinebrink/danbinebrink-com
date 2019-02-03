@@ -10,17 +10,17 @@
 }
 
 body {
-    background: #111;
-    background-image: url('/assets/img/background.jpg');
-    background-size: cover;
+    background-color: #111;
+    background-image: url('./assets/img/background.jpg');
+    // background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
+    overflow-y: scroll;   // leave this here, helps with angular animations
 }
 
 h1 {
     font-family: 'Abril Fatface', Arial, sans-serif
 }
-
 h2 {
     font-family: 'Abril Fatface', Helvetica, Arial, sans-serif;
     color: #15c8e4;
@@ -41,8 +41,26 @@ section {
     padding: 50px 10px;
 }
 header {
-    min-height: 350px;
-    background-image: url('assets/img/background-beach.jpg');
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    display: block;
+    font-family: "Abril Fatface", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 66px;
+    line-height: 70px;
+    color: #fff;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    margin: 130px auto 20px;
+}
+header#index-page h1 {
+    margin-top: 10px;
+}
+
+header {
+    min-height: 380px;
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -55,21 +73,6 @@ header#contact {
 }
 header#portfolio {
     background-image: url('assets/img/background-laptop.jpg');
-}
-
-header .intro-text h1.name {
-    display: block;
-    font-family: "Abril Fatface", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    font-size: 66px;
-    color: #fff;
-    text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-    margin: 80px auto 20px;
-}
-
-header .intro-text {
-    color: #fff;
-    text-align: center;
 }
 
 

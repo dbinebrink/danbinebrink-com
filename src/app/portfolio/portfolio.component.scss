@@ -1,3 +1,35 @@
+.modal-body {
+    padding: 40px 80px;
+    background: #fff;
+    width: 80%;
+}
+.modal-body .modal-content img {
+    margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+    .modal-xl {
+        max-width: 900px;
+    }
+    .modal-xl .modal-content {
+        padding: 60px;
+    }
+    .modal-xl .modal-content p {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 991px) {
+    .modal-xl {
+        width: 95%;
+    }
+    .modal-xl .modal-content {
+        padding: 20px;
+    }
+}
+
+.portfolio-item {
+    cursor: pointer;
+}
+
 #portfolio .portfolio-item .portfolio-link {
     display: block;
     position: relative;
@@ -12,36 +44,31 @@
     height: 100%;
     opacity: 0;
     transition: all ease 0.5s;
-    -webkit-transition: all ease 0.5s;
-    -moz-transition: all ease 0.5s;
 }
 
-.modal-body {
-    padding: 40px 80px;
-    background: #fff;
+@media (min-width: 576px){
+    .col-sm-4 {
+        -ms-flex: 0 0 31%;
+        flex: 0 0 31%;
+        max-width: 31%;
+    }
 }
-.modal-body p {
-    margin-top: 2px;
-}
-.portfolio-modal .modal-content img {
-    margin-bottom: 40px;
+.modal-dialog .modal-content img.img-responsive {
+    margin-bottom: 30px;
     border: solid 1px #eee;
 }
-
-.portfolio-modal .modal-content img {
+.modal-dialog .modal-content a {
     margin-bottom: 30px;
-}
-.img-centered {
-    margin: 0 auto;
+    
 }
 #portfolio .portfolio-item {
-    max-width: 400px;
-    margin: 10px;
+    margin: 5px;
+    margin-top: 30px;
 }
 #portfolio .portfolio-item img {
     box-shadow: 5px 5px 5px #e6e6e6;
-    max-width: 400px;
-    margin: 10px;
+    max-width: 380px;
+    margin: 5px;
 }
 .portfolio-caption {
     text-align: center;
@@ -51,16 +78,35 @@
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
     position: absolute;
     width: 100%;
-    height: 80px;
+    height: 100%;
     font-size: 20px;
     text-align: center;
-    top: 40%;
+    top: 35%;
     margin-top: 5px;
     color: white;
 }
 #portfolio .portfolio-item .portfolio-link {
     display: block;
     position: relative;
-    max-width: 400px;
     margin: 0 auto;
+}
+
+// blue hover state for port squares
+#portfolio .portfolio-item .portfolio-link .caption {
+    background: rgba(21, 200, 228, 0.9);
+    position: absolute;
+    min-width: 390px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+@media screen and (max-width: 480px) {
+    #portfolio .portfolio-item .portfolio-link .caption {
+        min-width: 320px;
+    }
+}
+
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+    opacity: 1;
 }
