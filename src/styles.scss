@@ -3,33 +3,43 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
+    // quick reset
     padding: 0px;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
 body {
     background-color: #111;
     background-image: url('./assets/img/background.jpg');
-    // background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
     overflow-y: scroll;   // leave this here, helps with angular animations
 }
-
+@media screen and (max-width: 480px) {
+    body {
+        overflow-x: hidden !important;
+    }
+}
 h1 {
     font-family: 'Abril Fatface', Arial, sans-serif
 }
-h2 {
+
+p {
+    font-family: 'Roboto', Arial, sans-serif
+}
+.modal-content h2, section h2 {
     font-family: 'Abril Fatface', Helvetica, Arial, sans-serif;
     color: #15c8e4;
     margin-bottom: 30px;
     font-size: 38px !important;
 }
 
-p {
-    font-family: 'Roboto', Arial, sans-serif
+
+@media screen and (max-width: 480px) {
+    sup {
+        display: none;
+    } 
 }
 
 .container-fluid {
@@ -75,9 +85,8 @@ header#portfolio {
     background-image: url('assets/img/background-laptop.jpg');
 }
 
-
 span.span-special {
-    font-family: 'Abril Fatface', Helvetica, Arial, sans-serif;
+    font-family: "Abril Fatface", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #15c8e4;
     display: inline-block;
     transform: scale(1);
@@ -85,4 +94,20 @@ span.span-special {
     scale: 1;
     padding-left: 0;
     transition: transform 0.3s, padding-left 0.5s;
+}
+@media screen and (max-width: 480px) {
+    header h1, span.span-special {
+        font-family: "Abril Fatface", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 38px;    
+        line-height: 42px;
+    }
+    header span.skills {
+        display: block;
+        margin-bottom: 40px;    
+    }
+}
+
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }

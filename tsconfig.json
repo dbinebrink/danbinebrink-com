@@ -18,5 +18,12 @@
       "es2018",
       "dom"
     ]
-  }
+  },
+  "exclude": [
+    "**/*.psd",
+    "./src/app/assets/vid",
+    "./assets/vid",
+    "./src/app/assets/favicon",
+    "./assets/favicon"
+  ]
 }

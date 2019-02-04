@@ -1,10 +1,15 @@
-nav {
+nav#mainNav {
     padding-left: 0;
     margin-left: 0;
-	background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+}
+@media screen and (max-width: 480px) {
+	nav#mainNav {
+		background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 100%);
+	}
 }
 
-.navbar-nav li.nav-item {
+.navbar-nav li.nav-item a.nav-link {
     background-color: transparent;
     padding: 5px 14px;
     color: #fff;
@@ -26,9 +31,6 @@ nav {
     color: white;
     margin: 5px 20px;
 }
-nav#mainNav {
-    background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%) !important;
-}
 
 a.navbar-brand {
 	font-size: 22px;
@@ -42,8 +44,30 @@ a.navbar-brand {
     margin-left: 0;
 	transition: color 0.3s, background-color 0.3s, border-radius 0.3s;
 }
+@media screen and (max-width: 480px) {
+	a.navbar-brand {
+		font-size: 19px;
+		padding: 10px 10px 8px;
+	}
+	header#index-page h1 {
+		margin-top: 90px;
+	}
+	.navbar-nav li.nav-item {
+		background: rgba(0,0,0,0.8);
+	}
+	.navbar-nav li.nav-item a.nav-link {
+		padding: 5px 10px;
+		margin: 0 auto;
+		font-size: 20px;
+		text-align: center;
+	}
+}
 a.navbar-brand:hover {
 	color: #0099b1;
 	background: #fff;
 	border-radius: 3px;
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+    margin-right: 10px;
 }

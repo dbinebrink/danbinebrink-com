@@ -53,7 +53,7 @@
         max-width: 31%;
     }
 }
-.modal-dialog .modal-content img.img-responsive {
+.modal-dialog .modal-content img.img-fluid {
     margin-bottom: 30px;
     border: solid 1px #eee;
 }
@@ -67,6 +67,7 @@
 }
 #portfolio .portfolio-item img {
     box-shadow: 5px 5px 5px #e6e6e6;
+    width: 98%;
     max-width: 380px;
     margin: 5px;
 }

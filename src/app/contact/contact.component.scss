@@ -1,0 +1,18 @@
+label {
+    font-family: 'Roboto', Arial;
+    font-size: 18px;
+    color: rgb(68, 69, 73);
+}
+
+form {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+@media screen and (max-width: 480px) {
+        
+    form {
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+}

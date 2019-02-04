@@ -15,7 +15,7 @@
 
 <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
 
-<!-- BOOT 4 + FA -->
+<!-- BOOT 4 + FA, will bundle these in later -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.css">
@@ -38,10 +38,9 @@
 <app-root></app-root>
 
 
-<!-- a little jquery for now for bootstrap 4 stuff, might delete this later -->
+<!-- a little jquery for now, might delete this later -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>  
-
 <script>
 $(document).ready(function(){
     $(window).scroll(function () {
@@ -52,14 +51,7 @@ $(document).ready(function(){
         $('body,html').animate({ scrollTop: 0 }, 400);
         return false;
     });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $('h1.name').delay(300).animate({opacity:1.0});  // fancy stuff for the home page, fadeins appear on load
-    $('p.skills').delay(600).animate({opacity:1.0});
-    $('a.button-special').delay(900).animate({opacity:1.0});
-    $('.or-scroll-down').delay(1500).animate({opacity:1.0});
+    $('.or-scroll-down').css("opacity",0).delay(1500).animate({opacity:1});
 });
 </script>    
 

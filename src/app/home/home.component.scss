@@ -3,25 +3,38 @@ h1 {
     padding: 10px;
 }
 
-video {
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 0;
-    width: auto;
-    // min-width: 1200px;
-    // min-height: 900px;
-}
-
 p {
     color: #fff;
 }
-.tooltip2 {
+
+/* Tooltip container */
+.tooltip-container {
+    font-family: 'Roboto', Arial;
     font-weight: bold;
+    color: #fff;
+    border-bottom: 1px dotted white;
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted white;
+    cursor: help;
 }
+/* Tooltip text */
+.tooltip-container .tooltip-text {
+    visibility: hidden;
+    width: 140px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 12px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+}
+
+
 .skills {
     font-family: 'Roboto', Arial;
     max-width: 790px;
@@ -38,15 +51,11 @@ p {
 .max-width-500 p {
     padding: 20px;
 }
-span.span-special {
-    font-family: "Abril Fatface", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #15c8e4;
-    display: inline-block;
-    transform: scale(1);
-    filter: saturate(100%);
-    scale: 1;
-    padding-left: 0;
-    transition: transform 0.3s, padding-left 0.5s;
+
+@media screen and (max-width: 480px) {
+    header#index-page h1 {
+        margin-top: 60px;
+    }
 }
 @media screen and (min-width: 768px) {
     header#index-page p.skills {
@@ -65,7 +74,7 @@ span.span-special {
         padding-left: 50px;
     }
 }
-button.button-special {
+.button-special {
     display: inline-block;
     font-size: 24px;
     background-color: #0099b1;
@@ -76,7 +85,7 @@ button.button-special {
     transition: color 0.3s, background-color 0.3s, padding 0.3s, border-radius 0.3s, letter-spacing 0.3s;
     letter-spacing: 0.5px;
 }
-button.button-special:hover {
+.button-special:hover {
     color: #0099b1;
     background: #fff;
     padding: 20px 60px;
@@ -104,8 +113,7 @@ header .intro-text .name {
 
 // slide stuff here
 .subslide {
-    // background: #fff;
-    // background: url('/assets/img/cyan-background.jpg') 50% 0;
+    padding-top: 20px;
 }
 .slide .row {
     display: flex;
@@ -113,6 +121,7 @@ header .intro-text .name {
     align-items: center;
     width: 100vw;
     height: 98vh;
+    margin: 0;
     max-height: 950px;
     color: white;
     text-align: center;
