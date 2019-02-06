@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  modalOpen(modal: any) {
+    this.modalService.open(modal);
   }
-
 }

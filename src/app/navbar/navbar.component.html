@@ -1,22 +1,19 @@
 <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="mainNav">
-  <!-- Brand/logo -->
-  <a class="navbar-brand" [routerLink]="['/']">Dan Binebrink Portfolio <i class="fa fa-home"></i></a>
-  
-  <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" (click)="isCollapsed = !isCollapsed">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <a class="navbar-brand" [routerLink]="['/']">Dan Binebrink Portfolio <i class="fa fa-home"></i></a>
 
-  <!-- Links -->
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item hvr-underline-from-left">
+            <li class="nav-item hvr-underline-from-left" (click)="hideNavbar()">
                 <a class="nav-link" [routerLink]="['/portfolio']" [routerLinkActive]="['active-link']">Portfolio</a>
             </li>
-            <li class="nav-item hvr-underline-from-left">
+            <li class="nav-item hvr-underline-from-left" (click)="hideNavbar()">
                 <a class="nav-link" [routerLink]="['/about']" [routerLinkActive]="['active-link']">About</a>
             </li>
-            <li class="nav-item hvr-underline-from-left">
+            <li class="nav-item hvr-underline-from-left" (click)="hideNavbar()">
                 <a class="nav-link" [routerLink]="['/contact']" [routerLinkActive]="['active-link']">Contact</a>
             </li>
         </ul>

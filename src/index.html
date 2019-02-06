@@ -15,12 +15,6 @@
 
 <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
 
-<!-- BOOT 4 + FA, will bundle these in later -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-
 <!-- GA -->
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -32,30 +26,15 @@
   </script>
 
 </head>
-<body>
+<body class="primary">
 
 <!-- angular logic goes through the app-root -->
 <app-root></app-root>
 
 
-<!-- a little jquery for now, might delete this later -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>  
-<script>
-$(document).ready(function(){
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 50) { $('#back-to-top').fadeIn(); } 
-        else { $('#back-to-top').fadeOut(); }
-    });
-    $('#back-to-top').click(function () {
-        $('body,html').animate({ scrollTop: 0 }, 400);
-        return false;
-    });
-    $('.or-scroll-down').css("opacity",0).delay(1500).animate({opacity:1});
-});
-</script>    
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>   -->
 
-</body>
+
 
 </body>
 </html>

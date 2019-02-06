@@ -1,31 +1,27 @@
 .modal-body {
-    padding: 40px 80px;
+    padding: 40px 40px;
     background: #fff;
-    width: 80%;
-}
-.modal-body .modal-content img {
-    margin-bottom: 20px;
-}
-@media (min-width: 992px) {
-    .modal-xl {
-        max-width: 900px;
-    }
-    .modal-xl .modal-content {
-        padding: 60px;
-    }
-    .modal-xl .modal-content p {
+    // max-width: 900px;  // this is moved to styles.scss, had to be placed there
+    p {
         margin-bottom: 30px;
     }
-}
-@media (max-width: 991px) {
-    .modal-xl {
-        width: 95%;
+    a {
+        margin-bottom: 30px;
     }
-    .modal-xl .modal-content {
+    img.img-fluid {
+        margin-bottom: 30px;
+        border: solid 1px #eee;
+    }
+}
+
+@media (max-width: 991px) {
+    .modal-body {
+        width: 95%;
         padding: 20px;
     }
 }
 
+///////////
 .portfolio-item {
     cursor: pointer;
 }
@@ -52,14 +48,6 @@
         flex: 0 0 31%;
         max-width: 31%;
     }
-}
-.modal-dialog .modal-content img.img-fluid {
-    margin-bottom: 30px;
-    border: solid 1px #eee;
-}
-.modal-dialog .modal-content a {
-    margin-bottom: 30px;
-    
 }
 #portfolio .portfolio-item {
     margin: 5px;
