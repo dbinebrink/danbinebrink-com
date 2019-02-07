@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // you can have jquery on init, it is messy but doable
+    // you can have jquery on init, it is messy but doable/ recode this with regular js
     $(document).ready(function() {
       $(window).scroll(function() {
           if ($(this).scrollTop() > 50) {
@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
           }
       });
       $('#back-to-top').click(function () {
-          $('body,html').animate({ scrollTop: 0 }, 3400);
+          $('body,html').animate({ scrollTop: 0 }, 800);
           return false;
       });
       $('.or-scroll-down').css('opacity', 0).delay(1500).animate({opacity: 1.0});
