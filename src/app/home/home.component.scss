@@ -173,6 +173,14 @@ header .intro-text .name {
     font-size: 80px;
 }
 
+.slide .row strong.text-orange, 
+.slide .row strong.text-orange2, 
+.slide .row strong.text-orange3 {
+    font-family: 'Roboto', Arial;
+    margin-top: -6px;
+ 
+}
+
 .slide .row .text-orange {
     color: #fed136;
 }
@@ -184,7 +192,7 @@ header .intro-text .name {
     max-width: 400px;
 }
 .ipad {
-    max-width: 750px;
+    // max-width: 750px;
 }
 
 
