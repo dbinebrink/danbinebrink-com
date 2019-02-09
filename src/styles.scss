@@ -8,7 +8,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css');
 
 * {
-    padding: 0px;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
@@ -17,14 +17,21 @@ body.primary {
     background-color: #111;
     background-image: url('./assets/img/background.jpg');
     background-repeat: no-repeat;
+    width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;   // leave this here, helps with angular animations
 }
 @media screen and (max-width: 480px) {
-    body {
+    body.primary {
         overflow-x: hidden !important;
+        width: 100%;
+        position: relative;
+    }
+    html, body {
+        overflow-x: hidden;
     }
 }
+
 h1 {
     font-family: 'Abril Fatface', Arial, sans-serif
 }

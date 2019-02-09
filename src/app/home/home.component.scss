@@ -194,7 +194,14 @@ header .intro-text .name {
 .ipad {
     // max-width: 750px;
 }
-
+.donut {
+    max-width: 300px;
+}
+@media screen and (max-width: 480px) {
+    .donut {
+        max-width: 200px;
+    }
+}
 
 table {
     margin-left: 25px;

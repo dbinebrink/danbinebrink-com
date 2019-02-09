@@ -9,4 +9,6 @@ import { slideInAnimation } from './app.animation';
 })
 export class AppComponent {
   title = 'danbinebrink-com';
+
+  
 }
