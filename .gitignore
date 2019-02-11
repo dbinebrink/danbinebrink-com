@@ -43,5 +43,5 @@ testem.log
 Thumbs.db
 
 # photoshop files
-.psd
-.env
+*.psd
+*.env
