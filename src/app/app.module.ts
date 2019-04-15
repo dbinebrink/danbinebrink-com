@@ -18,6 +18,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
+import { SkillsetComponent } from './skillset/skillset.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ContactComponent } from './contact/contact.component';
     LoginComponent,
     NavbarComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    SkillsetComponent
   ],
   imports: [
     BrowserModule,
